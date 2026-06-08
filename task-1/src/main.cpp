@@ -106,7 +106,7 @@ auto main(int argc, const char* argv[]) -> int
         ("w,n_warmup", "Num of warmup rounds",
             cxxopts::value<uint32_t>()->default_value("10"))
         ("t,n_test", "Num of test rounds",
-            cxxopts::value<uint32_t>()->default_value("100"))
+            cxxopts::value<uint32_t>()->default_value("10"))
         ("h,help", "Print usage");
     // clang-format on
     auto results = options.parse(argc, argv);
